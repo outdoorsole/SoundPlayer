@@ -30,9 +30,17 @@ class ViewController: UIViewController {
         // use a generic object (NSDataAsset)
         // it's a generic holding container for asset
         let sound = NSDataAsset(name: "guitar")
+        
         if sound == nil {
             print("error opening sound")
             return
+        }
+        
+        // play the sound
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        } catch {
+            
         }
     }
 }
