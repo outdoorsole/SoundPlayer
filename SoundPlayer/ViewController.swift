@@ -20,7 +20,11 @@ class ViewController: UIViewController {
 
     @IBAction func guitarButton(_ sender: UIButton) {
         print("Guitar button tapped")
+        playSound()
     }
 
+    func playSound() {
+        print("Playing sound")
+    }
 }
 
