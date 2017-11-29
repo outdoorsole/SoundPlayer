@@ -32,7 +32,10 @@ class ViewController: UIViewController {
         let sound = NSDataAsset(name: "guitar")
         if sound == nil {
             print("error opening sound")
+        } else {
+            // play the sound
         }
+        
     }
 }
 
