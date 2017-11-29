@@ -24,7 +24,15 @@ class ViewController: UIViewController {
     }
 
     func playSound() {
-        print("Playing sound")
+        print("playsound called")
+        
+        // like: let image = UIImage(named: "ice")
+        // use a generic object (NSDataAsset)
+        // it's a generic holding container for asset
+        let sound = NSDataAsset(name: "guitar")
+        if sound == nil {
+            print("error opening sound")
+        }
     }
 }
 
