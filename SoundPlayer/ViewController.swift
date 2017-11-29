@@ -18,18 +18,23 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func applauseButton(_ sender: UIButton) {
+        print("Applause button tapped")
+        playSound(audioSound: "applause")
+    }
+    
     @IBAction func guitarButton(_ sender: UIButton) {
         print("Guitar button tapped")
-        playSound()
+        playSound(audioSound: "guitar")
     }
-
-    func playSound() {
+    
+    func playSound(audioSound: String) {
         print("playsound called")
         
         // like: let image = UIImage(named: "ice")
         // use a generic object (NSDataAsset)
         // it's a generic holding container for asset
-        let sound = NSDataAsset(name: "guitar")
+        let sound = NSDataAsset(name: audioSound)
         
         if sound == nil {
             print("error opening sound")
