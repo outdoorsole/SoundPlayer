@@ -42,7 +42,11 @@ class ViewController: UIViewController {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             // activate the session
             try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("error setting up AVAudioSession")
+        }
             
+        do {
             player = try AVAudioPlayer(data: (sound?.data)!)
             player?.play()
         } catch {
