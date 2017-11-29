@@ -29,6 +29,14 @@
                                     <action selector="applauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7D7-QV-bXK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c36-ob-Z8V">
+                                <rect key="frame" x="159" y="366" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bubbles"/>
+                                <connections>
+                                    <action selector="bubblesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Bw-HM-aoa"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWn-Q3-lUv">
                                 <rect key="frame" x="164" y="278" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

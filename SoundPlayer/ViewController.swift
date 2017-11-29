@@ -28,6 +28,12 @@ class ViewController: UIViewController {
         playSound(audioSound: "guitar")
     }
     
+    @IBAction func bubblesButton(_ sender: UIButton) {
+        print("Bubble button tapped")
+        playSound(audioSound: "bubbles")
+    }
+    
+    
     func playSound(audioSound: String) {
         print("playsound called")
         
