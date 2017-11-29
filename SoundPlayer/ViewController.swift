@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
         } catch {
-            
+            print("error playing sound")
         }
     }
 }
