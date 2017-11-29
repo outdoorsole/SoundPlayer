@@ -38,7 +38,10 @@ class ViewController: UIViewController {
         
         // play the sound
         do {
+            // tells the system that playback is desired
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            // activate the session
+            try AVAudioSession.sharedInstance().setActive(true)
         } catch {
             print("error playing sound")
         }
