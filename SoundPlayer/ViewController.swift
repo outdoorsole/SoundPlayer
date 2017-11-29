@@ -44,6 +44,7 @@ class ViewController: UIViewController {
             try AVAudioSession.sharedInstance().setActive(true)
             
             player = try AVAudioPlayer(data: (sound?.data)!)
+            player?.play()
         } catch {
             print("error playing sound")
         }
