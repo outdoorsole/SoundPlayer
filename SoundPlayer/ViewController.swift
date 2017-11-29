@@ -33,6 +33,10 @@ class ViewController: UIViewController {
         playSound(audioSound: "bubbles")
     }
     
+    @IBAction func monsterButton(_ sender: UIButton) {
+        print("Monster button tapped")
+        playSound(audioSound: "monster")
+    }
     
     func playSound(audioSound: String) {
         print("playsound called")

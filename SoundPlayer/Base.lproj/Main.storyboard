@@ -37,6 +37,14 @@
                                     <action selector="bubblesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Bw-HM-aoa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzK-sX-CtE">
+                                <rect key="frame" x="159" y="476" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Monster"/>
+                                <connections>
+                                    <action selector="monsterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lcD-Gj-8Zv"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWn-Q3-lUv">
                                 <rect key="frame" x="164" y="278" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
